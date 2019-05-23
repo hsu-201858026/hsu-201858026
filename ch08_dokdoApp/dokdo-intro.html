@@ -1,0 +1,213 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+   li { list-style:none; }
+  .picture { list-style:none; padding:0; margin:0; }
+  .picture li { float:left; width:50%;}
+  .picture li a {display:block; margin:5px; border: 1px }
+  .picture li img { display:block; width:50%;  height:auto;}
+  .picture li img:hover { display:block; width:100%;  height:auto;} 
+</style>
+</head>
+
+<body>
+<div data-theme="b">
+	<div data-role="page" id="home">
+		<div data-role="header" data-theme="b">
+			<h1>나의 관심사</h1>
+		</div>
+		<div data-role="content" style="text-align:center">
+				<img src="man.jpg" >
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#intro">좋아하는 게임</a></li>
+				<li><a href="#movie" data-transition="slidedown">좋아하는 유튜버</a></li>
+				<li><a href="#wizard3-1" data-rel="dialog">좋아하는 음악</a></li>
+				<li><a href="#sports4-1" data-rel="dialog">좋아하는 운동</a></li>
+				<li><a href="#gallery">좋아하는 음식</a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<a href="mresume - 복사본.html">제작자_김주형</a>
+		</div>
+	</div>
+	
+	<div data-role="page" id="intro" data-theme="a">
+		<div data-role="header" data-theme="a">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>좋아하는 게임</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img width="100%" height="280" src="http://post.phinf.naver.net/MjAxODAxMThfMzYg/MDAxNTE2Mjg0NzM3ODM0.XQjzsVwTUzyTc47T6FOwZLFPStEU0bYp3VDht-c-TIUg.JWaTPfkbhSOBF5hL5nKzvuH_SIffoEXQZt-xUoS9k5cg.PNG/Io5kqfvOaCmRZqZ7G5uPkY0whD2M.jpg">
+				</div>			
+			<div data-role="collapsible-set" data-theme="a" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>메이플스토리</h3>
+					<p>서비스하는 세계 최초의 2D 사이드 스크롤 방식 온라인 게임이다. 전 세계 9개국 이상에서 서비스 되고 있으며, 약 13억 명 이상의 사용자가 가입되어 있다</p>
+			<ul data-role="listview">
+				<li>
+					<a href="http://www.maplestory.com">
+						<h3>메이플스토리</h3>
+						<p>등급: 전체 이용가</p>
+						<p>회사: NEXON</p>
+						<p>장르: rpg</p>
+					</a>
+				</li>
+				</div>
+				<div data-role="collapsible">
+					<h3>리그오브레전드</h3>
+					<p>세계 최고의 MOBA(Multiplayer Online Battle Arena) 게임입니다. 
+끝없이 이어지는 실시간 전투와 협동을 통한 팀플레이, RTS와 RPG를 하나의 게임에서 동시에 즐길 수 있는 새로운 장르의 온라인 게임입니다. 두 팀은 각기 독특한 특성과 플레이스타일을 자랑하는 강력한 챔피언을 소환하여, 다양한 모드의 전장에서 정면 대결을 펼칩니다. 
+신규 챔피언이 끊임없이 추가되며, 지속적인 업데이트가 이루어지고, 흥미진진한 e스포츠 대회의 중심이기도 한 리그 오브 레전드에서 많은 동료 소환사들과 함께 박진감 넘치는 전투를 즐겨보세요!
+</p>
+				<ul data-role="listview">
+				<li>
+					<a href="http://www.leagueoflegends.co.kr/">
+						<h3>리그오브레전드</h3>
+						<p>등급: 12세이상 이용가</p>
+						<p>회사: Roit Games</p>
+						<p>장르: ios</p>
+					</a>
+				</li>
+				</div>
+				<div data-role="collapsible" >
+					<h3>하스스톤</h3>
+					<p>하스스톤은 여러분이 직접 워크래프트의 영웅이 되어 빠른 속도로 펼쳐지는 치열한 전략 대결에 뛰어드는 카드 게임입니다. 몇 분 동안만 하스스톤과 함께하면 강력한 카드를 내서 주문을 시전하고, 하수...
+생략 </p>
+				<ul data-role="listview">
+				<li>
+					<a href="https://playhearthstone.com/ko-kr/">
+						<h3>하스스톤</h3>
+						<p>등급: 12세이상 이용가</p>
+						<p>회사: Blizard</p>
+						<p>장르: TCG</p>
+					</a>
+				</li>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<a href="mresume - 복사본.html">제작자_김주형</a>
+		</div>		
+	</div>
+	
+	<div data-role="page" id="movie" data-theme="a">
+		<div data-role="header" data-position="fixed" data-theme="a">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>좋아하는 유튜버</h1>
+		</div>
+		<div data-role="content" >
+			<div class="ui-bar ui-bar-e">엠비션 유튜브</div><br/>
+			<li><iframe width="100%" height="240" src="https://www.youtube.com/embed/Nzry95BgwEA"></iframe></li><br/>
+			<div class="ui-bar ui-bar-e">핫도그 tv 각자먹방</div><br/>
+			<li><iframe width="100%" height="240" src="https://www.youtube.com/embed/Ek7a4Z59HZw"></iframe></li><br/>
+			</div>
+		<div data-role="footer" data-theme="b">
+		</div>
+	</div>
+	
+	<div data-role="page" id="wizard3-1">
+		<div data-role="header">
+			<h1>좋아하는 음악</h1>
+		</div>
+		<div data-role="content">
+			<div class="ui-bar ui-bar-e">초록빛 - 폴킴</div><br/>
+			<iframe width="100%" height="240" src="https://www.youtube.com/embed/NAi690rUpMk"></iframe></li><br/>	
+			<div class="ui-bar ui-bar-e">사랑에 연습이 있었다면 - 임재현</div><br/>
+			<iframe width="100%" height="240" src="https://www.youtube.com/embed/kXAvbHPdTZ0"></iframe></li><br/>
+		</div>
+		<div data-role="footer">
+			<a href="#home"  data-direction="reverse">이전</a>
+			<a href="#wizard3-2" data-rel="dialog" data-transition="slide">다음</a>
+		</div>
+	</div>
+
+	<div data-role="page" id="wizard3-2">
+		<div data-role="header">
+			<h1>피아노 음악</h1>
+		</div>
+		<div data-role="content">
+			<div class="ui-bar ui-bar-e">새벽별과 소년의 노래 - sereno</div><br/>
+			<iframe width="100%" height="240" src="https://www.youtube.com/embed/edtPURcdT30"></iframe></li><br/>			
+			<div class="ui-bar ui-bar-e">river flows in you - 이루마</div><br/>
+			<img src="iruma.jpg" alt="" width="100%" height="240">
+			<audio controls width="100%" preload="metadata">
+				<source src="river.mp3" type="audio/mp3">
+			</audio>	
+		</div>
+		<div data-role="footer">
+			<a href="#wizard3-1"  data-direction="reverse">이전</a>
+			<a href="#home">처음</a>
+		</div>
+	</div>
+	
+		<div data-role="page" id="sports4-1">
+		<div data-role="header">
+			<h1>야구</h1>
+		</div>
+		<div data-role="content">
+			<div class="ui-bar ui-bar-e">야구 - 두산베어스 팬</div><br/>
+			<img src="야구.jpg" width="100%" height="240">
+			<img src="두산베어스.jpg" width="100%" height="240">	
+		</div>
+		<div data-role="footer">
+			<a href="#home"  data-direction="reverse">이전</a>
+			<a href="mresume - 복사본.html">제작자_김주형</a>
+			<a href="#sports4-2" data-rel="dialog" data-transition="slide">다음</a>
+		</div>
+	</div>
+
+	<div data-role="page" id="sports4-2">
+		<div data-role="header">
+			<h1>농구</h1>
+		</div>
+		<div data-role="content">
+			<div class="ui-bar ui-bar-e">농구 - kgc인삼공사</div><br/>
+			<img src="농구.jpg" width="100%" height="240">
+			<img src="kgc.jpg" width="100%" height="240">
+			</audio>	
+		</div>
+		<div data-role="footer">
+			<a href="#sports4-1"  data-direction="reverse">이전</a>
+			<a href="mresume - 복사본.html">제작자_김주형</a>
+			<a href="#home">처음</a>
+		</div>
+	</div>
+
+	<div data-role="page" id="gallery"  data-theme="b">
+		<div data-role="header" data-position="fixed"  data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>좋아하는 음식</h1>
+		</div>
+			<div data-role="content">
+            <ul class="picture">
+            	<p>튀김</p>
+				<li><a href="치킨.jpg" rel="external"><img src="치킨.jpg" /></a></li>	
+				<li><a href="김말이.jpg" rel="external"><img src="김말이.jpg" /></a></li>	
+				<li><a href="돈까스.jpg" rel="external"><img src="돈까스.jpg" /></a></li>	
+				<li><a href="새우튀김.jpg" rel="external"><img src="새우튀김.jpg" /></a></li>
+				<p>육류</p>	
+				<li><a href="삼겹살.jpg" rel="external"><img src="삼겹살.jpg" /></a></li>	
+				<li><a href="수육.jpg" rel="external"><img src="수육.jpg" /></a></li>	
+				<li><a href="갈비.jpg" rel="external"><img src="갈비.jpg" /></a></li>	
+				<li><a href="만두.jpg" rel="external"><img src="만두.jpg" /></a></li>
+				<br><br><br><br>
+				<p>밑반찬</p>	
+				<li><a href="김치.jpg" rel="external"><img src="김치.jpg" /></a></li>	 
+				<li><a href="무말랭이.jpg" rel="external"><img src="무말랭이.jpg" /></a></li>    
+            </ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<a href="mresume - 복사본.html">제작자_김주형</a>
+		</div>		
+	</div>
+</div>	
+</body>
+</html>
